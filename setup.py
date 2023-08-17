@@ -18,8 +18,8 @@ setup_args = {
     "version": "3.2.0",
     "extras_require": {
         "full": [
-            "numpy; python_version<'3.12'",
-            "numpy>=1.26.0b1; python_version>='3.12'",
+            'numpy; python_version<"3.12"',
+            'numpy>=1.26.0b1; python_version>="3.12"',
         ]
     },
     "url": "https://github.com/maxbachmann/RapidFuzz",
