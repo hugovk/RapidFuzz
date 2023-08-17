@@ -16,7 +16,12 @@ with open("README.md", encoding="utf8") as f:
 setup_args = {
     "name": "rapidfuzz",
     "version": "3.2.0",
-    "extras_require": {"full": ["numpy"]},
+    "extras_require": {
+        "full": [
+            "numpy; python_version<'3.12'",
+            "numpy>=1.26.0b1; python_version>='3.12'",
+        ]
+    },
     "url": "https://github.com/maxbachmann/RapidFuzz",
     "author": "Max Bachmann",
     "author_email": "pypi@maxbachmann.de",
