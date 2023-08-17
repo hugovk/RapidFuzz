@@ -1,6 +1,7 @@
 name: Full Build
 
 on:
+  push:
   release:
     types:
       - published
